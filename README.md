@@ -1,70 +1,48 @@
-# Getting Started with Create React App
+ # Animal Shelter Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+[![N|Solid](https://i.ibb.co/wK28G9h/animal-shelter.png)](https://animal-shelter-com.netlify.app/)
 
-In the project directory, you can run:
+Install the dependencies and devDependencies and start the server.
 
-### `npm start`
+```sh
+npm i
+npm start
+```
+## Requirements
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+ 1. We need to design a homepage with following sections:
+a. Layout:
+i. Header
+ii. Footer
+![N|Solid](https://i.ibb.co/wK28G9h/animal-shelter.png)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+ 2. Main Section:
+i. A Section for people who are interested in adoption. When they click on adopt button, they should
+be able to see “Adopt A Pet” form. And also, a button to show all the available pets for adoption.
+ii. A section for people who are interested in giving away a pet. When they click on “Give Away”, we
+should show a Give Away form. 
+![N|Solid](https://i.ibb.co/mTJLjQJ/adopt-form.png)
 
-### `npm test`
+2. Adopt A Pet form:
+a. They need to fill the questionnaire and also provide us with their personal details.
+b. These personal details need to be validated.
+c. When they click on “Request for Adoption” button, please save the details in local indexed DB.
+![N|Solid](https://i.ibb.co/LkcfYXw/giveaway-form.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Give A Pet away form:
+a. They need to fill the questionnaire and also provide us with their personal details.
+b. These personal details need to be validated.
+c. When they click on “Request for Give Away” button, please save the details in local indexed DB.
+![N|Solid](https://i.ibb.co/bNJC66x/allpets.png)
 
-### `npm run build`
+## Tech
+- [ReactJS] - HTML enhanced for web apps!
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Installation
+```sh
+npm i
+npm start
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
