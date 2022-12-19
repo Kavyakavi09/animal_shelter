@@ -1,0 +1,29 @@
+.navbar {
+  height: 54px;
+  z-index: 999;
+}
+
+.link {
+  font-family: 'Roboto', sans-serif;
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+.activeLink {
+  font-family: 'Roboto', sans-serif;
+  color: #000000;
+  font-weight: 700;
+  text-decoration-line: underline;
+  letter-spacing: 0.5px;
+}
+
+.social {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .logo {
+    height: 38px;
+  }
+}

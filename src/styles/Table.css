@@ -1,0 +1,47 @@
+.btn-table {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  color: black;
+  font-weight: 700 !important;
+  font-size: 15px;
+}
+
+.btn-table-border {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  color: #0075aa;
+  font-weight: 700 !important;
+  font-size: 15px;
+  border-bottom: 2px solid #0075aa;
+}
+
+.pets-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 25px;
+}
+
+#pets {
+  font-family: 'Roboto', sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin: 20px 0px;
+}
+
+#pets td,
+#pets th {
+  padding: 10px;
+}
+
+#pets th {
+  text-align: left;
+  border-bottom: 1px solid black;
+}
+
+#pets td {
+  text-align: left;
+  padding-right: 50px;
+}

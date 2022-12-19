@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "name": "Luna",
+    "breed": "Affenpinscher",
+    "label": "Affenpinscher",
+    "value": "Affenpinscher",
+    "age": 9
+  },
+  {
+    "id": 2,
+    "name": "Teddy",
+    "breed": "Afghan Hound",
+    "label": "Afghan Hound",
+    "value": "Afghan Hound",
+    "age": 14
+  },
+  {
+    "id": 3,
+    "name": "Bella",
+    "breed": "African Hunting Dog",
+    "label": "African Hunting Dog",
+    "value": "African Hunting Dog",
+    "age": 6
+  },
+  {
+    "id": 4,
+    "name": "Poppy",
+    "breed": "Airedale Terrier",
+    "label": "Airedale Terrier",
+    "value": "Airedale Terrier",
+    "age": 8
+  },
+  {
+    "id": 5,
+    "name": "Milo",
+    "breed": "Akbash Dog",
+    "label": "Akbash Dog",
+    "value": "Akbash Dog",
+    "age": 10
+  },
+  {
+    "id": 6,
+    "name": "Buddy",
+    "breed": "Akita",
+    "label": "Akita",
+    "value": "Akita",
+    "age": 7
+  },
+  {
+    "id": 7,
+    "name": "Lola",
+    "breed": "Alapaha Blue Blood Bulldog",
+    "label": "Alapaha Blue Blood Bulldog",
+    "value": "Alapaha Blue Blood Bulldog",
+    "age": 5
+  },
+  {
+    "id": 8,
+    "name": "Alfie",
+    "breed": "Alaskan Husky",
+    "label": "Alaskan Husky",
+    "value": "Alaskan Husky",
+    "age": 12
+  },
+  {
+    "id": 9,
+    "name": "Bailey",
+    "breed": "Alaskan Malamute",
+    "label": "Alaskan Malamute",
+    "value": "Alaskan Malamute",
+    "age": 15
+  },
+  {
+    "id": 10,
+    "name": "Charlie",
+    "breed": "American Bulldog",
+    "label": "American Bulldog",
+    "value": "American Bulldog",
+    "age": 11
+  }
+]

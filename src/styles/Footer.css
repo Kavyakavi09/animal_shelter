@@ -1,0 +1,26 @@
+.svgsocial {
+  color: white;
+  font-size: 18px !important;
+}
+
+.footer-svg svg {
+  color: #9ca3af;
+  font-size: 20px !important;
+  cursor: pointer;
+}
+
+.footer-cont {
+  width: 100% !important;
+  height: 100% !important;
+  padding: 50px 20px;
+}
+
+.footer-item-container {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
