@@ -17,11 +17,13 @@ import swal from 'sweetalert';
 import { handleAdopt, handleAway } from '../db/IndexedDb';
 
 const Forms = () => {
-  const { multiselect, selected } = useContext(SelectContext);
+  const { multiselect, selected, setselected, setMultiSelect } =
+    useContext(SelectContext);
 
-  let breedArray = multiselect?.map((breed) => breed.value);
+  let breedArray = multiselect?.map((breed) => breed?.value);
 
   let petType = selected?.value;
+
   let navigate = useNavigate();
   let location = useLocation();
   const path = location.pathname.split('/')[1];
@@ -62,6 +64,9 @@ const Forms = () => {
       } else {
         handleAway(formDetails);
       }
+      formik.resetForm();
+      setselected(null);
+      setMultiSelect([]);
       swal({
         title: 'Thank you',
         text: 'Your request has been received',
