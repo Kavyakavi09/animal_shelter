@@ -5,11 +5,11 @@ import { Link } from 'react-router-dom';
 
 const Adopt = () => {
   return (
-    <Stack direction='column' spacing={3} className='vh'>
+    <Stack direction='column' spacing={3}>
       <Stack
-        direction='row'
+        direction={{ md: 'row', xs: 'column' }}
         alignItems='center'
-        justifyContent='space-between '>
+        justifyContent='space-between'>
         <Stack>
           <Typography
             variant='h6'
@@ -22,27 +22,30 @@ const Adopt = () => {
           <Typography
             variant='h7'
             fontWeight={400}
+            textAlign='left '
             fontSize='16px'
             lineHeight='30px'
             letterSpacing={0.5}
             fontFamily='Lato'
             mt={1}
-            width='500px'>
+            width={{ md: '500px', xs: '100%' }}>
             Glad that you care for the animals so much. We make sure that you'll
             not repent your decision of adopting your favorite pet !!
           </Typography>
         </Stack>
         <img
           src={DogCat}
+          className='DogCat'
           alt='DogCat'
           height={130}
           style={{ marginTop: '15px' }}
         />
       </Stack>
-      <Stack direction='row' spacing={2}>
+      <Stack direction={{ md: 'row', xs: 'column' }} spacing={2}>
         <Link to={'/adopt'}>
           <Button
             variant='contained'
+            fullWidth
             color='primary'
             sx={{ color: '#fff', textTransform: 'capitalize' }}>
             Adopt
@@ -51,6 +54,7 @@ const Adopt = () => {
         <Link to={'/allpets'}>
           <Button
             variant='outlined'
+            fullWidth
             color='secondary'
             sx={{ textTransform: 'capitalize' }}>
             What all pets do we have ?

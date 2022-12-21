@@ -6,8 +6,11 @@ import { Link } from 'react-router-dom';
 
 const GiveAway = () => {
   return (
-    <Stack direction='column' spacing={5} p={1}>
-      <Stack direction='column' spacing={2} alignItems='flex-end'>
+    <Stack direction='column' spacing={5}>
+      <Stack
+        direction='column'
+        spacing={2}
+        alignItems={{ xs: 'center', md: 'flex-end' }}>
         <Typography
           variant='h6'
           fontWeight={400}
@@ -23,8 +26,8 @@ const GiveAway = () => {
           lineHeight='30px'
           letterSpacing={0.5}
           fontFamily='Lato'
-          textAlign='right'
-          width='98%'>
+          textAlign={{ xs: 'left', md: 'right' }}
+          width={{ xs: '100%', md: '98%' }}>
           Lorem epsum fbsdifcbij fkjebfkjebfkejbfewkjbfwkejbfwkefefb wef wef
           efnwekjfbkewjfb wkje febf weubfwef wiuefb ewfu webfuwe bfewufb efb ebf
           uewbfiuwefbwefweiuf wueibf iuwbefiu efewiufbwiuefbi euwbiuebfe bfe
@@ -41,8 +44,13 @@ const GiveAway = () => {
           </Button>
         </Link>
       </Stack>
-      <Stack direction='row' spacing={4} p={2}>
-        <img src={PlayImage} alt='PlayImage' height={130} />
+      <Stack direction={{ md: 'row', xs: 'column' }} spacing={5}>
+        <img
+          src={PlayImage}
+          alt='PlayImage'
+          height={150}
+          className='PlayImage'
+        />
         <Typography
           variant='h7'
           fontWeight={400}
