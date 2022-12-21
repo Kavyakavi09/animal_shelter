@@ -11,10 +11,7 @@ import { Link } from 'react-router-dom';
 const Footer = () => {
   return (
     <Box
-      sx={{
-        backgroundColor: '#131313',
-        minWidth: '100%',
-      }}>
+      className="foot">
       <Box className='footer-cont'>
         <Box className='footer-item-container'>
           <Box className='footer-item'>
