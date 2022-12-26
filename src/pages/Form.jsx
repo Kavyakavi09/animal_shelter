@@ -7,6 +7,8 @@ import {
   FormHelperText,
 } from '@mui/material';
 import React, { useContext } from 'react';
+import dog from '../utils/dogs.json';
+import cat from '../utils/cats.json';
 import { useLocation, useNavigate } from 'react-router-dom';
 import BreedType from '../components/BreedType';
 import PetTypeForm from '../components/PetTypeForm';
@@ -20,9 +22,18 @@ const Forms = () => {
   const { multiselect, selected, setselected, setMultiSelect } =
     useContext(SelectContext);
 
-  let breedArray = multiselect?.map((breed) => breed?.value);
-
   let petType = selected?.value;
+
+  let breedArray = multiselect?.value;
+
+  const dogArray =
+    petType === 'dog'
+      ? dog?.filter((breed) => breed?.value === breedArray)
+      : cat?.filter((breed) => breed?.value === breedArray);
+
+  let dogsAge = dogArray.sort((a, b) => b.age - a.age);
+
+  let oldDog = dogsAge[0];
 
   let navigate = useNavigate();
   let location = useLocation();
@@ -56,7 +67,9 @@ const Forms = () => {
       const formDetails = {
         ...values,
         petType,
-        breed: breedArray,
+        breed: oldDog?.breed,
+        name: oldDog?.name,
+        age: oldDog?.age,
       };
 
       if (path === 'adopt') {

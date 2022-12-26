@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import Select from 'react-select';
-import dog from '../utils/dogs.json';
-import cat from '../utils/cats.json';
+import { dogs } from '../utils/dogBreed';
+import { cats } from '../utils/catBreed';
 import makeAnimated from 'react-select/animated';
 import { SelectContext } from '../context/selectContext';
 
@@ -13,12 +13,19 @@ export default function BreedType({ name }) {
   return (
     <div>
       <Select
-        isMulti
         value={multiselect}
         defaultValue={multiselect}
         onChange={setMultiSelect}
         components={animatedComponents}
-        options={selected?.value === 'dog' ? dog : cat}
+        options={
+          selected?.value === null
+            ? []
+            : selected?.value === 'dog'
+            ? dogs
+            : selected?.value === 'cat'
+            ? cats
+            : []
+        }
         className='select'
         closeMenuOnSelect={false}
       />

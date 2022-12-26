@@ -78,5 +78,13 @@
     "label": "American Bulldog",
     "value": "American Bulldog",
     "age": 11
+  },
+  {
+    "id": 12,
+    "name": "Charlie Puth",
+    "breed": "American Bulldog",
+    "label": "American Bulldog",
+    "value": "American Bulldog",
+    "age": 17
   }
 ]
